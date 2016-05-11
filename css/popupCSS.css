@@ -1,0 +1,101 @@
+/*
+	popupCSS.css
+	
+	Thomas Lindauer
+	thomaslindauer@mail.com
+	
+	© 2016
+	
+	This file is part of TwitchAudience.
+
+    TwitchAudience is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    TwitchAudience is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    see http://www.gnu.org/licenses/.
+*/
+
+body{
+	background-color:#F2F2F2;
+}
+#versionNumber{
+	color:green;
+}
+#simpleSettings{
+	background:beige;
+}
+#popupArea{
+	overflow:auto;
+	margin-top:5px;
+	width:300px;
+	max-height:330px;
+	text-align: center;
+}
+.menuItem:hover{
+	cursor: pointer;
+}
+
+.menuItem{
+	color:black;
+	border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    width: 40%;
+    background-color:rgba(255,255,255,0.5);
+}
+#menuSelection{
+	width: 200px;
+	margin: 0 auto;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+.anOption{
+	margin-bottom:20px;
+}
+.openOption:hover{
+	cursor: pointer;
+	color: white;
+}
+.openOption{
+	margin: 0 auto;
+	padding-bottom:5px;
+	border-radius: 25px;
+	border: 3px solid #D98997;
+	background-color:#FFB6A3;
+	font-size:15px;
+	color:rgba(255,255,255,0.5);
+	width:200px;
+}
+#saveOptions{
+	margin-bottom:10px;
+}
+#optionsSection{
+	background-color:;
+}
+#InformationSection{
+	background-color:;
+}
+#donateToName:hover{
+	cursor: pointer;
+	color: white;
+}
+#donateToName{
+	text-size:15px;
+	color:#D465C5;
+	text-decoration: underline;
+}
+
+/*lol*/
+#thankYouEaster{
+	color:rgba(10,10,10,0.7);
+}
+#thankYouEaster:hover{
+	cursor: pointer;
+	color:rgba(123,21,122,0.5);
+}

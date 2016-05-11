@@ -1,0 +1,110 @@
+/*
+	CircleChartCSS.css
+	
+	Thomas Lindauer
+	thomaslindauer@mail.com
+	
+	© 2016
+	
+	This file is part of TwitchAudience.
+
+    TwitchAudience is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    TwitchAudience is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    see http://www.gnu.org/licenses/.
+*/
+
+#TWITCHAUDIENCEpluginArea{
+	background:rgba(255, 255, 255, 0.85);
+	overflow: hidden;
+    position: absolute;
+    width: 100%;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.21);
+}
+#TWITCHAUDIENCEallStreamList{
+	padding-bottom:5px;
+}
+.TWITCHAUDIENCEaStream{
+	padding-left:10px;
+	font-size:15px;
+	color: black;
+}
+
+.TWITCHAUDIENCEaStream:hover{
+	cursor: pointer;
+	color: white;
+}
+
+#TWITCHAUDIENCEpluginTitle{
+	background-color: #FFB6A3;
+	color:white;
+	font-size:30px;
+	padding-left:10px;
+    border: 3px solid #D98997;
+}
+#TWITCHAUDIENCEstreamName:hover{
+	color: white;
+	cursor: pointer;
+}
+#TWITCHAUDIENCEstreamName{
+	font-size: 15px;
+    color: rgba(255, 255, 255, 0.58);
+    padding-bottom: 5px;
+}
+#TWITCHAUDIENCEremovePluginFromPage:hover {
+	color:white;
+	cursor:pointer;
+}
+#TWITCHAUDIENCEremovePluginFromPage{
+	float:right;
+	padding-right:10px;
+}
+.TWITCHAUDIENCEcircle {
+	position: relative;
+	border: 3px solid rgba(192,192,192,0.1);
+	border-radius: 50%;
+	background:;
+	display: inline-block;
+	overflow:hidden;
+}
+.TWITCHAUDIENCEcircle:hover{
+	overflow:visible;
+}
+
+.TWITCHAUDIENCEcirclePercent{
+	position: absolute;
+	top: 24%;
+	left: 20%;
+}
+.TWITCHAUDIENCEcircleRanking{
+	position: absolute;
+	top: 7%;
+	left: 25%;
+}
+
+.TWITCHAUDIENCEcircleText{
+	position: absolute;
+	top: 45%;
+	left: 10%;
+}
+
+.TWITCHAUDIENCEcircleText:hover{
+	font-weight: bold;
+}
+
+#TWITCHAUDIENCEdiagramContent{
+	margin-top: 10px;
+	padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+#TWITCHAUDIENCEnoMessage{
+	
+}

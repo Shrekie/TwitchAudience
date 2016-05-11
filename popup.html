@@ -1,0 +1,129 @@
+<!--
+
+	popup.html
+
+	Thomas Lindauer
+	thomaslindauer@mail.com
+
+	© 2016
+
+	This file is part of TwitchAudience.
+
+	TwitchAudience is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	TwitchAudience is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	see http://www.gnu.org/licenses/.
+
+-->
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/popupCSS.css">
+	</head>
+	<body>
+		<div id="popupArea">
+		
+			<div id="versionNumber">v 1.0.2</div>
+			
+			<div class="openOption" id="insertIntoChat">Open</div> 
+			
+			<div class="anOption">
+			    Automatically open:
+				<input type="checkbox" id="automaticallyOpen">
+			</div>
+			
+			<div class="openOption" id="quickOption">Quick Options</div>
+
+			<div id="simpleSettings" style="display:none">
+			<div class="anOption">
+				<h3>Set plugin size</h3>
+				<form>
+				<input type="radio" class="pluginSize" name="size" value="small"> Small
+				<input type="radio" class="pluginSize" name="size" value="medium"> Medium
+				<input type="radio" class="pluginSize" name="size" value="large"> Large
+				</form>
+			</div>
+			
+			
+			<div class="anOption">
+			Select circle background color:
+				<input class="jscolor" value="FFFFFF">
+			</div>
+			
+			<button class="saveOptions">Save</button>
+			<a class="resetOptions" href="#">Reset settings</a>
+			</div>
+			</br>
+			<div class="openOption" id="openBackgroundPage" href="#" style="margin-bottom:5px;">New Window</div>
+			
+			<div id="menuSelection">
+				<div class="menuItem" id="Information" style="float:left;margin-right: 30px;">Plugin Information</div>
+				<div class="menuItem" id="Options" style="overflow: hidden;">Advanced Options</div>
+			</div>
+			
+			<div id="InformationSection"  style="display:none;">
+				<a target="_blank" href="https://chrome.google.com/webstore/detail/twitchaudience/lnamhgjahgehblhdpappbgdgcpemadgi">Store page</a>
+			
+				<p>Report any problems or suggestions to me directly or post them on the chrome web store page.</p>
+				<textarea style="width:250px;min-height:80px;line-height: 50%;">
+				
+					1.0.2:
+					Chat data get function 
+					more efficent.
+					
+					1.0.1:
+					Support for BetterTTV.
+					This.
+					
+				</textarea>
+				<p id="donateToName" style="margin-bottom: 5px;">Thomas Lindauer</p>
+				<p style="margin-top: 1px;">thomaslindauer@mail.com</p>
+				<p><span id="thankYouEaster">Thank you</span> for using TwitchAudience.</p>
+			</div>
+			
+			<div id="optionsSection" style="display:none;">
+			
+			<h2>Circles</h2>
+			
+			<div class="anOption">
+				<p>Max amount of circles displayed:</p> 
+				<input id="amountCircles" type ="range" min ="2" max="10" step ="1" value ="5"/>
+				<div class="SliderValue"></div>
+			</div>
+			
+			<div class="anOption">
+				<p>Max size of the circles in pixels:</p> 
+				<input id="maxpixelSize" type ="range" min ="100" max="1000" step ="10" value ="300"/>
+				<div class="SliderValue"></div>
+			</div>
+			
+			<div class="anOption">
+				<p>Minumum size of the circles in pixels:</p> 
+				<input id="minimumGraphicalSize" type ="range" min ="10" max="999" step ="10" value ="70"/>
+				<div class="SliderValue"></div>
+			</div>
+			
+			<h2>Chat</h2>
+			<div class="anOption">
+				<p>Set the seconds time period to search for repeated messages:</p> 
+				<input id="timelimitforreset" type ="range" min ="3" max="100" step ="1" value ="15"/>
+				<div class="SliderValue"></div>
+			</div>
+			
+			<a class="resetOptions" href="#">Reset settings</a>
+			<button class="saveOptions">Save</button>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/popup.js"></script>
+		<script type="text/javascript" src="js/jscolor.min.js"></script>
+	</body>
+</html>

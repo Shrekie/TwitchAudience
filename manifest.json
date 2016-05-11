@@ -1,0 +1,42 @@
+{
+
+	"manifest_version": 2,
+
+	"name": "Twitch Chat Audience",
+	"description": "Gets Twitch chat data, displays graphical circles representing the repeated chat.",
+	"version": "1.0.2",
+	
+	"author":"Thomas Lindauer",
+	
+	"short_name": "TA",
+	
+	"page_action":{
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+	
+	"icons":{ 
+		"16": "iconHQ.png",
+		"48": "iconHQ.png",
+		"128": "iconHQ.png" 
+	},
+	
+	"background": {
+		"scripts": ["js/jquery.min.js","js/TwitchChat.js"],
+		"persistent": false
+	},
+
+	"content_scripts": [
+	{
+		"matches": ["https://www.twitch.tv/*"],
+		"css": ["css/CircleChartCSS.css"],
+		"js": ["js/jquery.min.js","js/jscolor.min.js","js/ChatContent.js","js/CircleChart.js"]
+	}
+	],
+	
+	"permissions": [
+		"tabs",
+		"storage"
+	]
+	
+}
